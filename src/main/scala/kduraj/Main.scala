@@ -12,7 +12,9 @@ object Main extends App {
   //val result = data.par.map(parallelCalculation)
 
   //findPeople()
-  new MyOptions
+  //new MyOptions
+
+  new MyStrings
 
   def doubleIt(number: Int) = number * 2
 
