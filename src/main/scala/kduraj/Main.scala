@@ -11,7 +11,8 @@ object Main extends App {
   //val data = 1 to 20
   //val result = data.par.map(parallelCalculation)
 
-  findPeople()
+  //findPeople()
+  new MyOptions
 
   def doubleIt(number: Int) = number * 2
 
@@ -41,9 +42,7 @@ object Main extends App {
     val res2 = byChar('k')
     println("res2: " + res2)
 
-
   }
-
 
   def stringSorted(): Unit = {
     val str = "aSdF"
@@ -73,7 +72,7 @@ object Main extends App {
   }
 
   def findPeople(): Unit = {
-    val people= List("kevin", "thomas", "duraj")
+    val people = List("kevin", "thomas", "duraj")
     val names = List("kevin", "jen")
 
     val matchingPeople = people.filter(p => names.exists(p.contains))
