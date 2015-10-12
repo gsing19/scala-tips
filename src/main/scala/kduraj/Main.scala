@@ -2,13 +2,18 @@ package kduraj
 
 object Main extends App {
 
-  //anagrams
-  //multiply()
-  //stringGroupBy()
-  stringSorted()
+  // anagrams
+  // multiply()
+  // stringGroupBy()
+  // stringSorted()
+
+  // parallel execution
+  //val data = 1 to 20
+  //val result = data.par.map(parallelCalculation)
+
+  findPeople()
 
   def doubleIt(number: Int) = number * 2
-
 
   def multiply(): Unit = {
 
@@ -60,4 +65,19 @@ object Main extends App {
 
   }
 
+  def parallelCalculation(number: Int) = {
+
+    println("calculating ..." + number)
+    Thread.sleep(100)
+    number * 2
+  }
+
+  def findPeople(): Unit = {
+    val people= List("kevin", "thomas", "duraj")
+    val names = List("kevin", "jen")
+
+    val matchingPeople = people.filter(p => names.exists(p.contains))
+    println(matchingPeople)
+
+  }
 }
