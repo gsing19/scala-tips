@@ -4,10 +4,14 @@ import java.io.File
 
 object ApplicationMain extends App {
 
-  ScalaRegex("""289 Testing""")
-  Parallel(10)
-  ScalaString()
-  ScalaOption()
+//  ScalaRegex("""289 Testing""")
+//  Parallel(10)
+//  ScalaString()
+//  ScalaOption()
+
+//  testCollections()
+
+  FindDuplicates
 
   def testCollections(): Unit = {
     val file = new File(getClass.getClassLoader.getResource("test.dat").getPath)
