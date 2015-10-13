@@ -7,5 +7,5 @@ object ApplicationMain extends App {
   //  ScalaString()
   //  ClassMatch
 
-  ScalaOption
+  ScalaOption()
 }

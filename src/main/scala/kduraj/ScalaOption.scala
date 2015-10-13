@@ -1,26 +1,44 @@
 package kduraj
 
 /**
- * Scala Options
+ * Scala Option
+ * isDefined, isEmpty, getOrElse, match
  */
 object ScalaOption {
 
-  var str1 = Some("abc")          // Scala can infer the type
-  var str2: Option[String] = None // Type must be explicit
+  def apply(): Unit = {
 
-  str2 match {
-    case Some(t) => println("exist")
-    case _ =>    println("Does not exist")
+    println("\n--- Empty Option ---")
+    stringEmptyOption()
+
+    println("\n--- Get Or Else ---")
+    stringGetOrElse()
+
+    println("\n--- Match Option ---")
+    stringMatchOption()
+
   }
 
+  val str1 = Some("abc") // Scala can infer the type
+  var str2: Option[String] = None // Type must be explicit
 
-  if (str1 isDefined) println(str2)
-  if (str2 isEmpty) println("Nothing here!")
+  def stringEmptyOption(): Unit = {
 
-  val w = str2.getOrElse("Empty")
-  println(w)
+    if (str1 isDefined) println(str2)
+    if (str2 isEmpty) println("Nothing here!")
+  }
 
-  str2 = Some("Kevin Thomas Duraj")
-  println(str2 map(_.toString) filter(_.length > 0) map(_.toUpperCase))
+  def stringGetOrElse(): Unit = {
+    val res = str2.getOrElse("Empty")
+    println(res)
+  }
+
+  def stringMatchOption(): Unit = {
+
+    str2 match {
+      case Some(t) => println("exist")
+      case _ => println("Does not exist")
+    }
+  }
 
 }
