@@ -1,11 +1,6 @@
 package kduraj
 
-import com.sun.deploy.util.StringUtils
-
-/**
- * Created by kevin1 on 10/12/15.
- */
-class MyStrings {
+class ScalaStrings {
 
 
   trait Person {

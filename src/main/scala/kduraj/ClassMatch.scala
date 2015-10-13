@@ -4,7 +4,7 @@ package kduraj
  * Created by kevin1 on 10/12/15.
  */
 
-class MyOptions {
+object ClassMatch {
 
   case class Person(age: Int)
 
@@ -25,20 +25,11 @@ class MyOptions {
 
   def doStuff(p:Option[Person]) = p match {
     case Some(person) => println("here is " + person)
-    case None => println("no person")
+    case None => println("No person")
   }
 
   doStuff(person)
   doStuff(person2)
-
-
-  //--------------  Regex ------------------//
-  val line = "123abc"
-  val regex = """(\d+)(.*)""".r
-  line match {
-    case regex(age, name) => println(age)
-  }
-
 
 
 }
