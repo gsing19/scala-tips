@@ -1,4 +1,4 @@
-import kduraj.ClassMatch.Person
+import .Person
 
 val list = List('a', 'b', 'c')
 

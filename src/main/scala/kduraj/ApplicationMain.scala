@@ -2,10 +2,9 @@ package kduraj
 
 object ApplicationMain extends App {
 
-  //   ScalaRegex("789 testing")
-  //   Parallel(50)
-  //  ScalaString()
-  //  ClassMatch
-
+  ScalaRegex("""289 Testing""")
+  Parallel(10)
+  ScalaString()
   ScalaOption()
+
 }

@@ -17,9 +17,13 @@ object ScalaOption {
     println("\n--- Match Option ---")
     stringMatchOption()
 
+    println("\n--- Object Match Option ---")
+    objectMatchOption()
+
   }
 
-  val str1 = Some("abc") // Scala can infer the type
+  val str1 = Some("abc")
+  // Scala can infer the type
   var str2: Option[String] = None // Type must be explicit
 
   def stringEmptyOption(): Unit = {
@@ -35,9 +39,26 @@ object ScalaOption {
 
   def stringMatchOption(): Unit = {
 
-    str2 match {
-      case Some(t) => println("exist")
+    str1 match {
+      case Some(str1) => println("exist")
       case _ => println("Does not exist")
+    }
+  }
+
+  def objectMatchOption(): Unit = {
+
+    case class Person(i: Int)
+    val person1 = Option(Person(100))
+    val person2: Option[Person] = Option(null)
+
+     person1 match {
+      case Some(person1) => println("Exist " + person1)
+      case None => println("No person")
+    }
+
+    person2 match {
+      case Some(person1) => println("Exist " + person1)
+      case None => println("No person")
     }
   }
 
