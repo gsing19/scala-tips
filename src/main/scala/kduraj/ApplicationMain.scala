@@ -8,10 +8,11 @@ object ApplicationMain extends App {
 //  Parallel(10)
 //  ScalaString()
 //  ScalaOption()
-
 //  testCollections()
-
-  FindDuplicates
+//  FindDuplicates
+//  new Math()
+//  Palindrome("kduraj")
+    ScalaMath.sumOfIntegers(1,10)
 
   def testCollections(): Unit = {
     val file = new File(getClass.getClassLoader.getResource("test.dat").getPath)

@@ -1,6 +1,6 @@
 package kduraj
 
-object ScalaString {
+object Strings {
 
   def apply(): Unit = {
 

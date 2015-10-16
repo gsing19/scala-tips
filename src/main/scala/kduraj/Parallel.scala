@@ -6,7 +6,6 @@ package kduraj
 object Parallel {
 
   def apply(i: Int): Unit = {
-
     // parallel execution
     val data = 1 to i
     val result = data.par.map(parallelCalculation)

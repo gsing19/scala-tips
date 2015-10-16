@@ -1,6 +1,6 @@
 package kduraj
 
-class ScalaStrings {
+class MatchObjects {
 
 
   trait Person {

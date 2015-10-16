@@ -3,7 +3,7 @@ package kduraj
 /**
  * Created by kevin1 on 10/13/15.
  */
-object ScalaRegex {
+object Regex {
 
   def apply(str: String): Unit = {
 
